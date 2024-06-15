@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Документ</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="application">
+      <h2>Заявка на работу</h2>
+      <form id="people" action="" method="POST" class="form">
+        <label>
+          Ваше ФИО:
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Пушкин А.С."
+            required
+            autofocus
+          />
+        </label>
+
+        <label>
+          Email:
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="pushkin@yandex.ru"
+            required
+          />
+        </label>
+
+        <label>
+          Возраст:
+          <input type="number" name="age" required />
+        </label>
+
+        <label>
+          Образование:
+          <select name="education" required>
+            <option value="technical" selected>Техническое</option>
+            <option value="humanitarian">Гуманитарное</option>
+            <option value="other">Другая</option>
+          </select>
+        </label>
+
+        <label>
+          Есть водительские права:
+          <input type="checkbox" name="drive-license" value="1" />
+        </label>
+
+        <label>
+          Фото:
+          <input type="file" accept="image/jpeg" name="photo" required />
+        </label>
+
+        <button type="submit" class="btn-submit">Отправить заявку</button>
+      </form>
+    </div>
+  </body>
+</html>
